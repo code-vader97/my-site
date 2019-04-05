@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font awesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./stylesheet.css">
+
+    <title>Noob Sheet</title>
+</head>
+
+<body>
+    <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center d-flex text-center h-50">
+                <div class="col-12 col-md-8  h-50 ">
+                    <i class="fas fa-om fa-lg" id="om"></i>
+                    <h1 class="display-2  text-light mb-2 mt-5"><strong>Shashank Rawat</strong> </h1>
+                    <p class="lead  text-light mb-5">
+                        <b>Hi! I am an Engineer, </b>who loves coding, reading, writing, and occasional
+                        flirting<i class="far fa-grin-wink"></i>. Humans are complicated so I spend the
+                        majority of my time with machines. Connect with me on the following social
+                        platforms:</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center d-flex text-center h-35">
+                <div class="col-lg-1 col-md-1 social-links">
+                    <a href="https://www.quora.com/profile/Shashank-Rawat-19" data-toggle="tooltip" title="Quora"><i
+                            class="fab fa-quora fa-lg"></i></a>
+                </div>
+                <div class="col-lg-1 col-md-1 social-links">
+                    <a href="https://www.linkedin.com/in/rogueknight" data-toggle="tooltip" title="Linkedin"><i
+                            class="fab fa-linkedin-in fa-lg"></i></a>
+                </div>
+                <div class="col-lg-1 col-md-1 social-links">
+                    <a href="https://www.instagram.com/noob_sheet/?hl=en" data-toggle="tooltip" title="Instagram"><i
+                            class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center h-15">
+                <div class="col-md-12">
+                    <p class="lead text-light mt-5"><b>Contact me:</b> <span id="email" data-toggle="tooltip"
+                            title="Click to copy." onclick="copyToClipboard('#email')">shashankrawat97@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script for copying element to clipboard on click -->
+    <script>
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./asset/vladstudio_still_wallpaper.jpg);
+}
+
+#om{
+    color: #fff;
+}
+
+.social-links > a {
+    font-size: 1.5rem;
+    color: #888;
+}
+
+.social-links > a :hover{
+    color: #fff;
+}
+
+#email {
+    cursor: pointer;
+}
